@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="code_FILL0_wght400_GRAD0_opsz48.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mi | Zuñiga Armas Luis Anselmo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main> 
+        <div class="barra-nav">
+            <ul>
+                <li class="lista active">
+                    <a href="/">
+                        <span class="icono"><i class="fa-solid fa-house"></i></i></span>
+                        <span class="title">Inicio</span>
+                    </a>
+                </li>
+                <li class="lista active">
+                    <a href="/about.html">
+                        <span class="icono"><i class="fa-solid fa-user"></i></span>
+                        <span class="title">Sobre Mi</span>
+                    </a>
+                </li>
+                <li class="lista ">
+                    <a href="/portafolio.html">
+                        <span class="icono"><i class="fa-solid fa-book"></i></span>
+                        <span class="title">Portafolio</span>
+                    </a>
+                </li>
+                <div class="indicador"></div>
+            </ul>
+        </div>
+        <div class="texto-habilidades bdy">
+            <h3 class="txt-hab">Sobre Mi</h3>
+            <p class="txt-habilidad">Experiencia, Educación, Entretenimiento, y mas...</p>
+        </div>
+        <div class="habilidades bdy">
+            <div class="hability shadow-pop-br"><i class="fa-solid fa-id-card h-icon"></i><p class="hab-txt">Experiencia</p><p class="h-txt-desc">Estudiando de forma autodidacta y practicando constantemente...</p></div>
+            <div class="hability shadow-pop-br"><i class="fa-solid fa-laptop-code h-icon"></i><p class="hab-txt">Proyectos</p><p class="h-txt-desc">Capaz de construir sistemas funcionales en base a las necesidades requeridas.</p></div>
+            <div class="hability shadow-pop-br"><i class="fa-solid fa-gamepad h-icon"></i><p class="hab-txt">Juegos</p><p class="h-txt-desc">En mis tiempo libre me gusta disfrutarlo jugando videojuegos.</p></div>
+        </div>
+        <p class="sk-txt bdy">Algunos lenguajes y Frameworks que ocupo...</p>
+        <div class="skills bdy">
+            <div class="skill shadow-pop-br"><i class="fa-solid fa-award cer"></i><p class="txt">HTML</p><p class="txt-skll">Avanzado</p></div>
+            <div class="skill shadow-pop-br"><i class="fa-solid fa-award cer"></i><p class="txt">CSS</p><p class="txt-skll">Intermedio</p></div>
+            <div class="skill shadow-pop-br"><i class="fa-solid fa-award cer"></i><p class="txt">JavaScript</p><p class="txt-skll">Basico</p></div>
+            <div class="skill shadow-pop-br"><i class="fa-solid fa-award cer"></i><p class="txt">SQL Server</p><p class="txt-skll">Intermedio</p></div>
+            <div class="skill shadow-pop-br"><i class="fa-solid fa-award cer"></i><p class="txt">Tailwind CSS</p><p class="txt-skll">Aprendiendo</p></div>
+            <div class="skill shadow-pop-br"><i class="fa-solid fa-award cer"></i><p class="txt">React JS</p><p class="txt-skll">Aprendiendo</p></div>
+            <div class="skill shadow-pop-br"><i class="fa-solid fa-award cer"></i><p class="txt">UX UI</p><p class="txt-skll">Aprendiendo</p></div>
+            <div class="skill shadow-pop-br"><i class="fa-solid fa-award cer"></i><p class="txt">Python</p><p class="txt-skll">Basico</p></div>
+            <div class="skill shadow-pop-br"><i class="fa-solid fa-award cer"></i><p class="txt">Bootstrap</p><p class="txt-skll">Basico</p></div>
+            <div class="skill shadow-pop-br"><i class="fa-solid fa-award cer"></i><p class="txt">C++</p><p class="txt-skll">Intermedio</p></div>
+        </div>
+    </main>
+    <script>
+        let list = document.querySelectorAll('li');
+            for (let i=0; i<list.length; i++){
+                list[i].onmouseover = function(){
+                let j = 0;
+                while (j < list.length){
+                    list[j++].className = 'list';
+                }
+                list[i].className = 'list active';
+            }
+        }
+            </script>
+</body>
+</html>

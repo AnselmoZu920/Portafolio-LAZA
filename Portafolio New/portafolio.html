@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="code_FILL0_wght400_GRAD0_opsz48.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Zuñiga Armas Luis Anselmo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="barra-nav">
+        <ul>
+            <li class="lista">
+                <a href="/">
+                    <span class="icono"><i class="fa-solid fa-house"></i></i></span>
+                    <span class="title">Inicio</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="/about.html">
+                    <span class="icono"><i class="fa-solid fa-user"></i></span>
+                    <span class="title">Sobre Mi</span>
+                </a>
+            </li>
+            <li class="lista active">
+                <a href="/portafolio.html">
+                    <span class="icono"><i class="fa-solid fa-book"></i></span>
+                    <span class="title">Portafolio</span>
+                </a>
+            </li>
+            <div class="indicador"></div>
+        </ul>
+    </div>
+    <main>
+        <div class="home-portafolio">
+            <h1 class="txt-port">Estos son algunos de los proyectos en los que he trabajado
+                 a lo largo de mi carrera como "Freelance"...</h1>
+                 <div class="card-port">
+                    <div class="c-img">
+                        <img src="lua-img.jpg" class="img-port">
+                    </div>
+                    <div class="crad-txt">
+                        <h1 class="txt-card1">Centro Terapeutico y Spa Lúa</h1>
+                        <p class="p-card1">Este es un sitio web para un Centro especializado en 
+                            masajes, quiropractica, cosmiatria, belleza corporal y muchos mas servicios.
+                            <br> Este es uno de mis primeros proyectos a nivel local, y esta desarrollado para cumplir 
+                            las necesidades tanto del cliente como del que imparte dicho servicio
+                        </p>
+                        <h4 class="txt-card1">Esta desarrollado con..</h4>
+                        <img src="css-svgrepo-com.svg" class="img-svg">
+                        <img src="icons8-html-5.svg" class="img-svg">
+                     </div>
+                 </div>
+        </div>
+    </main>
+    <script>
+        let list = document.querySelectorAll('li');
+            for (let i=0; i<list.length; i++){
+                list[i].onmouseover = function(){
+                let j = 0;
+                while (j < list.length){
+                    list[j++].className = 'list';
+                }
+                list[i].className = 'list active';
+            }
+        }
+            </script>
+</body>
+</html>
