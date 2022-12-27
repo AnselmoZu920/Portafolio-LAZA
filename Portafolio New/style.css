@@ -1127,7 +1127,10 @@ body{
   .skills{
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(1, 1fr);
-    width: 98%;
+	margin-left: 17px;
+  }
+  .skill{
+    width: 96%;
   }
   .txt-skll{
     margin-left: 100px;
