@@ -45,6 +45,7 @@ body{
 .txt-abme{
   color: var(--bgicon);
   font-size: 17px;
+  text-align:justify;
 }
 
 /*Barra de Navegacion*/
