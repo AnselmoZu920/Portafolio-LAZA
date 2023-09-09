@@ -21,9 +21,6 @@ html{
 body{
     background: var(--bdy);
 }
-.port{
-  margin-top: -5;
-}
 /*Home*/
 .home{
     text-align: center;
@@ -165,8 +162,8 @@ body{
 }
 /*Img*/
 .imghome{
-    width: 340px;
-    height: 400px;
+    width: 320px;
+    height: 430px;
 }
 .cont .imghome{
     display: block;
