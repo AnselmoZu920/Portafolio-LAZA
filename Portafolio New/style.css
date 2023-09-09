@@ -22,7 +22,7 @@ body{
     background: var(--bdy);
 }
 .port{
-  margin-top: -10;
+  margin-top: -5;
 }
 /*Home*/
 .home{
@@ -166,7 +166,7 @@ body{
 /*Img*/
 .imghome{
     width: 340px;
-    height: 350px;
+    height: 400px;
 }
 .cont .imghome{
     display: block;
